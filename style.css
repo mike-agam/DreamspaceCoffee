@@ -1,0 +1,271 @@
+
+@font-face {
+    font-family: 'Lemon';
+    src: url('./Lemon-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Lemon-Wide';
+    src: url('./Lemon-Wide.ttf');
+}
+
+@font-face {
+    font-family: 'Body';
+    src: url('./Exo2-Regular.ttf');
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://i.imgur.com/J9cBmct.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    /* dim the background image */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://i.imgur.com/J9cBmct.png');
+    
+}
+
+.content {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    font-family: 'Body', sans-serif;
+   
+}
+
+h1 {
+    font-size: 4.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Lemon', sans-serif;
+    word-spacing: 120%;
+    letter-spacing: 0.09em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: -1.05em;
+    font-family: 'Lemon', sans-serif;
+    word-spacing: 120%;
+    letter-spacing: 0.09em;
+    text-align: right;
+    padding-right: 0.8em;
+
+}
+
+wide {
+    font-family: 'Lemon-Wide', sans-serif;
+    
+}
+
+alt {
+    font-feature-settings: "salt";
+}
+
+spacing {
+    letter-spacing: 0.09em;
+
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Body', sans-serif;
+}
+
+
+
+.glow {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #0f0, 0 0 80px #0f0;
+}
+
+.glow_alt {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+}
+
+.glow_salmon {
+    text-shadow: 0 0 5px #ff6a6a, 0 0 10px #ff6a6a, 0 0 20px #ff6a6a, 0 0 40px #ff6a6a, 0 0 80px #ff6a6a;
+
+}
+
+.glow_blue {
+    text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 80px #0000ff;
+}
+
+.glow_cyan {
+    text-shadow: 0 0 2px #00ffff, 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+
+.glow_white {
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff;
+}
+
+.glow_magenta {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+}
+
+.glow_violet {
+    text-shadow: 0 0 5px #9400d3, 0 0 10px #9400d3, 0 0 20px #9400d3, 0 0 40px #9400d3, 0 0 80px #9400d3;
+
+}
+
+.neon-button {
+    margin-top: 1em;
+    background-color: #121212;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    background-color: #00ff00;
+    color: #000;
+}
+
+@keyframes reverse-position {
+    0%   { left: 0; top: 0; } 
+    50%  { left: -3px; top: -3px; }  
+    100% { left: 0; top: 0; }
+  }
+  
+  @keyframes forward-position {
+    0%   { left: 0; top: 0; } 
+    50%  { left: 3px; top: 3px; }  
+    100% { left: 0; top: 0; }
+  }
+  
+  @keyframes lines {
+    0%   { opacity: 0.8; } 
+    30%  { opacity: 0; }
+    50%  { opacity: 0.4; }
+    80%  { opacity: 0; }  
+    100% { opacity: 0.8; }
+  }
+  
+  @keyframes text {
+    0%   { color: #222; } 
+    50%  { color: #fff; }  
+    100% { color: #222; }
+  }
+  
+  @keyframes background {
+    0%   { background: #efefef; } 
+    50%  { background: #222; }  
+    100% { background: #efefef; }
+  }
+  
+  body {
+    background: #fefefe;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0 16px;
+    border-radius: 4px;
+    margin-top: 2em;
+    color: #000;
+    background: #fff;
+    line-height: 1.15;
+    font-size: 1.5em;
+    height: 2.5em;
+    word-spacing: 0px;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 10em;
+    border: none;
+    text-align: center;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), background-color 280ms ease, color 280ms ease;
+  }
+
+  button {
+    /* neon effect */
+    color: #ff6a6a;
+    background: #00000050;
+    /* salmon */
+    box-shadow: 0px 0px 10px 5px #ff6a6a;
+    opacity: 1;
+    /* fluid stylish animation */
+  }
+
+  @keyframes neonGlow {
+    0%, 100% {
+      box-shadow:
+        0px 0px 10px 0px #ff6a6a,
+        0px 0px 20px 5px rgba(255, 106, 106, 0.7),
+        0px 0px 35px 10px rgba(255, 106, 106, 0.5),
+        inset 0px 0px 4px #ff6a6a; /* Inner shadow for depth */
+    }
+    50% {
+      box-shadow:
+        0px 0px 15px 0px #ff6a6a,
+        0px 0px 25px 5px rgba(255, 106, 106, 0.8),
+        0px 0px 40px 15px rgba(255, 106, 106, 0.6),
+        inset 0px 0px 4px #ff6a6a; /* Inner shadow for depth */
+
+    }
+  }
+  
+
+  h1, h2, p, button {
+    opacity: 0; /* set initial state to invisible */
+    animation-name: fadeIn;
+    animation-duration: 1.5s; /* or however long you want the fade to take */
+    animation-fill-mode: forwards; /* keeps the element at the end state of the animation */
+  }
+
+h2 {
+    animation-delay: 1s; /* starts 1.5s after the page loads */
+}
+
+  p {
+    animation-delay: 3s; /* starts immediately */
+  }
+
+button {
+    animation-delay: 5s; /* starts 1s after the page loads */
+}
